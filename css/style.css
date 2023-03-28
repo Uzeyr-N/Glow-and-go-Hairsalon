@@ -239,6 +239,7 @@ h3 {
   justify-content: space-evenly;
   /* padding: none;
   margin: none ; */
+  flex-wrap: wrap;
 }
 .workers{
   height: 30rem;
@@ -268,27 +269,28 @@ h3 {
 
 .gallery{
   height:250px;
+  padding: 2.5rem;
 }
-.bottem1{
-  /* transform:translate(0%,50%); */
+/* .bottem1{
+  transform:translate(0%,50%);
   width: 400px;
   box-shadow: 1px 1px whitesmoke;
 }
 .bottem2{
-  /* transform:translate(-10%,50%); */
+  transform:translate(-10%,50%);
   width: 400px;
   box-shadow: 1px 1px whitesmoke;
 }
 .top1{
-  /* transform:translate(150%,-60%); */
+  transform:translate(150%,-60%);
   padding: 1rem;
   box-shadow: 1px 1px whitesmoke;
 }
 .top2{
-  /* transform:translate(-240%,-60%); */
+  transform:translate(-240%,-60%);
   padding: 1rem;
   box-shadow: 1px 1px whitesmoke;
-}
+} */
 
 
 /*--------------------------------------end of above -------------------------*/
@@ -340,7 +342,7 @@ footer span{
   }
 
   .navbar h2{
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
 
   li{
@@ -372,7 +374,7 @@ footer span{
   }
 
   .heading > p{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-left: 5%;
   }
 
@@ -382,9 +384,10 @@ footer span{
 
   .discount {
     height: fit-content;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     display: flex;
-    padding: .2rem .2rem 0 .2rem;
+    padding: .2rem .6rem 0 .2rem;
+    /* margin-top: 6rem; */
   }
 
   .discount button{
@@ -501,6 +504,27 @@ footer span{
 
 
 @media screen and (min-width:481px) and (max-width:840px) {
+
+  header{
+    height: 4rem;
+    display: flex;
+  }
+  .navbar{
+    display: flex;
+  }
+
+  .navbar h2{
+    font-size: 1.8rem;
+  }
+
+  li{
+    font-size: 1rem;
+  }
+
+  html{
+    margin: 0;
+  }
+
   #intro{
     display: flex;
     background-image: url(../img/FLUCUd6XECMYEQm.jpg);
@@ -508,6 +532,14 @@ footer span{
     background-repeat: no-repeat;
     background-position-x: 75%;
     height: 40rem;
+  }
+
+  .discount {
+    height: fit-content;
+    font-size: 1.6rem;
+    display: flex;
+    padding: .2rem .6rem 0 .2rem;
+    margin-top: 6rem;
   }
 
   .heading > h1 {
@@ -518,6 +550,44 @@ footer span{
   .heading > p{
     font-size: 2.2rem;
     margin-left: 5%;
+  }
+
+  .lookBook{
+    text-align: center;
+    margin: 0;
+    /* background-image: url(../img/pexels-churckyno-bryant-1546035.jpg); */
+    color: whitesmoke;
+    text-decoration: double whitesmoke 2px;
+  }
+  .lookBook h2{
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
+
+  .hair{
+    justify-content:space-evenly;
+    padding: 1rem;
+  }
+
+  .gallery{
+    height:25rem;
+  }
+
+  .bottem1{
+    /* width: 20rem; */
+
+  .bottem2{
+    /* width: 20rem; */
+    
+  }
+
+  .top1{
+    /* width: 15rem; */
+
+
+  }
+  .top2{
+    /* width: 15rem; */
   }
 
   
