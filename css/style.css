@@ -1,0 +1,524 @@
+/******************************************
+/* CSS
+/*******************************************/
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  line-height: 1.15;
+  font-family: 'Playfair Display', serif;
+  margin: 2rem;
+  background: black;
+}
+
+h1,h2,h3,h4,h5,h6{
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+p{
+  font-size: 1.6rem;
+  padding: 1rem;
+  line-height: 2rem;
+  }
+
+body{
+  background: rgb(244,181,189);
+  background: linear-gradient(90deg, rgba(244,181,189,1) 74%, rgba(247,191,198,1) 80%, rgba(250,203,209,1) 87%, rgba(255,221,225,1) 97%);
+  
+}
+
+/* section{
+  border: blue 1px solid;
+  display: flex;
+  } */
+
+  /* ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    font-size: 1.6rem;
+  } */
+
+  li{
+    list-style: none;
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-size: 1.6rem;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  header{
+    height: 6rem;
+    display: flex;
+    width: 100%;
+  }
+
+  button{
+    display:flex;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    background-color: black;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    border: none;
+    margin-left: 5%;
+
+  }
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+/* img{
+  height: 50px;
+  justify-content: flex-start;
+} */
+
+/* nav{
+  display: flex;
+  justify-content: space-evenly;
+} */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px black solid;
+  width: 100%;
+}
+
+nav > h2{
+  font-size: 4rem;
+  margin-left: 5%;
+}
+
+/* nav > ul :nth-child(1){
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  height: 22%;
+} */
+
+
+#intro{
+  display: flex;
+  background-image: url(../img/FLUCUd6XECMYEQm.jpg);
+  background-size: cover;
+  height: 600px;
+  flex-direction: column;
+  border-bottom: black solid 1px;
+  border-width: 1rem;
+}
+
+.heading{
+  flex-direction: column;
+}
+
+.heading > h1 {
+  font-size: 8rem;
+  margin-left: 5%;
+  
+}
+
+.heading > p{
+  font-size: 4rem;
+  padding: 0 0 1.2rem 0;
+  margin: 1.8%;
+  margin-bottom: 0;
+}
+
+.discount {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background: black;
+  /* height: ; */
+  width: fit-content;
+  margin-top: 2rem;
+  text-align: center;
+  margin: 5%;
+  border-radius: 10px;
+  font-size: 2rem;
+  box-shadow: 0px 0px 3px 3px;
+}
+
+.discount button{
+  align-content: center;
+  align-self: center;
+  border: none;
+  
+}
+
+.style{
+  /* display: flex; */
+  flex-direction: column;
+  text-align: center;
+  
+}
+
+#main{
+  border-bottom: black solid 1px;
+  border-width: 1rem;
+  padding-bottom: 2rem;
+}
+
+.mainStyle{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.subHeading{
+  text-align: center;
+  padding: .2rem;
+  margin-top: 3%;
+}
+
+.icons{
+  width: 9rem;
+  height: 9rem;
+  justify-content: center;
+  align-self: center;
+  margin-top: 2rem;
+}
+
+.service{
+flex-direction: column;
+font-size: 1.2rem;
+}
+
+h3 {
+  align-self: center;
+  margin-bottom: 0;
+}
+
+.icons p{
+  align-self: center;
+  margin-bottom: 0;
+}
+
+
+.stylist{
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 2rem; */
+}
+
+.stylist h2{
+  align-self: center;
+  /* margin-top: 5%; */
+}
+.stylist p{
+  align-self: center;
+  font-size: 2rem;
+  padding: 0;
+}
+
+.staff{
+  display: flex;
+  justify-content: space-evenly;
+  /* padding: none;
+  margin: none ; */
+}
+.workers{
+  height: 30rem;
+  border: black solid 1rem;
+  
+}
+
+/* ----------------------------gallery---------------------- */
+.lookBook{
+  text-align: center;
+  background: black;
+  background-image: url(../img/pexels-churckyno-bryant-1546035.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  /* height: 600px; */
+  margin: 5% 5% 0 5%;
+  color: whitesmoke;
+}
+
+.hair{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.gallery{
+  height:250px;
+}
+.bottem1{
+  /* transform:translate(0%,50%); */
+  width: 400px;
+  box-shadow: 1px 1px whitesmoke;
+}
+.bottem2{
+  /* transform:translate(-10%,50%); */
+  width: 400px;
+  box-shadow: 1px 1px whitesmoke;
+}
+.top1{
+  /* transform:translate(150%,-60%); */
+  padding: 1rem;
+  box-shadow: 1px 1px whitesmoke;
+}
+.top2{
+  /* transform:translate(-240%,-60%); */
+  padding: 1rem;
+  box-shadow: 1px 1px whitesmoke;
+}
+
+
+/*--------------------------------------end of above -------------------------*/
+
+/* footer{
+    height: 6rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+} */
+footer{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+footer span{
+  font-size: 2.6rem;
+  justify-content: center;
+  display: flex;
+  margin-top: .2rem;
+}
+
+.footerIcon{
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0.2rem 1rem 0 1rem;
+}
+
+.footerIcon i{
+  margin: 1rem;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+/*-----------Media Quries-----------*/
+
+@media screen and  (max-width: 480px) {
+  header{
+    height: 4rem;
+    display: flex;
+  }
+  .navbar{
+    display: flex;
+  }
+
+  .navbar h2{
+    font-size: 1rem;
+  }
+
+  li{
+    font-size: 1rem;
+  }
+
+  html{
+    margin: 0;
+  }
+
+/*----------end of header-----------*/
+/*----------start of intro-----------*/
+
+  #intro{
+    display: flex;
+    background-image: url(../img/FLUCUd6XECMYEQm.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 270px;
+  }
+
+/* .heading{
+  flex-direction: column;
+} */
+
+  .heading > h1 {
+    font-size: 3.5rem;
+    
+  }
+
+  .heading > p{
+    font-size: 1.5rem;
+    margin-left: 5%;
+  }
+
+  button{
+    font-size: 1.2rem;
+  }
+
+  .discount {
+    height: fit-content;
+    font-size: 1.2rem;
+    display: flex;
+    padding: .2rem .2rem 0 .2rem;
+  }
+
+  .discount button{
+    align-content: center;
+    align-self: center;
+    border: none;
+  }
+
+  .discount h2{
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 1rem;
+  }
+  /* -----------------end of intro section-------------------*/
+  /* -----------------start of main section-------------------*/
+  #main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #main p{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+
+
+  /* -----------------end of main section-------------------*/
+
+  .mainStyle{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* -----------------start of style section-------------------*/
+  .staff{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+
+  .workers{
+    height: 20rem;
+  }
+
+
+  .stylist p{
+    margin: 0 2% 2% 2%;
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+
+  /*-------------end of style-------*/
+  /*-------------start of gallery-------*/
+
+  .lookBook{
+    text-align: center;
+    margin: 0;
+    /* background-image: url(../img/pexels-churckyno-bryant-1546035.jpg); */
+    color: whitesmoke;
+    text-decoration: double whitesmoke 2px;
+  }
+  .lookBook h2{
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
+
+  .hair{
+    justify-content:space-between;
+  }
+
+  /* .gallery{
+    height:25rem;
+  } */
+
+  .bottem1{
+    width: 20rem;
+    box-shadow: none;
+  }
+
+  .bottem2{
+    width: 20rem;
+    box-shadow: none;
+    margin-bottom: 5rem;
+  }
+
+  .top1{
+    width: 15rem;
+    box-shadow: none;
+
+  }
+  .top2{
+    width: 15rem;
+    box-shadow: none;
+    margin-bottom: 5rem;
+  }
+
+  /*---------------------end of gallery-----------------*/
+  /*---------------------start of footer-----------------*/
+  .footerIcon{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin: 0 1rem 0 1rem;
+    }
+  }
+
+  footer{
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+
+@media screen and (min-width:481px) and (max-width:840px) {
+  #intro{
+    display: flex;
+    background-image: url(../img/FLUCUd6XECMYEQm.jpg);
+    background-image: cover;
+    background-repeat: no-repeat;
+    background-position-x: 75%;
+    height: 40rem;
+  }
+
+  .heading > h1 {
+    font-size: 3.5rem;
+    
+  }
+
+  .heading > p{
+    font-size: 2.2rem;
+    margin-left: 5%;
+  }
+
+  
+}
