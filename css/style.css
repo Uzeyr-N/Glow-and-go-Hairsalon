@@ -232,6 +232,7 @@ h3 {
   align-self: center;
   font-size: 2rem;
   padding: 0;
+  text-align: center;
 }
 
 .staff{
@@ -376,6 +377,7 @@ footer span{
   .heading > p{
     font-size: 1.8rem;
     margin-left: 5%;
+    text-shadow: 1px 1px white;
   }
 
   button{
@@ -571,24 +573,5 @@ footer span{
 
   .gallery{
     height:25rem;
-  }
-
-  .bottem1{
-    /* width: 20rem; */
-
-  .bottem2{
-    /* width: 20rem; */
-    
-  }
-
-  .top1{
-    /* width: 15rem; */
-
-
-  }
-  .top2{
-    /* width: 15rem; */
-  }
-
-  
+  }  
 }
