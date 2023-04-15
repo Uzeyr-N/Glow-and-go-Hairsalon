@@ -221,6 +221,7 @@ h3 {
 .stylist{
   display: flex;
   flex-direction: column;
+  border-bottom: 1rem black solid ;
   /* margin-top: 2rem; */
 }
 
@@ -241,26 +242,30 @@ h3 {
   /* padding: none;
   margin: none ; */
   flex-wrap: wrap;
+  padding-bottom: 1rem;
 }
 .workers{
   height: 30rem;
-  border: black solid 1rem;
+  border: black solid .2rem;
+  margin: .2rem;
   
 }
 
 /* ----------------------------gallery---------------------- */
-.lookBook{
+.gridContainer{
   text-align: center;
-  background: black;
-  background-image: url(../img/pexels-churckyno-bryant-1546035.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  /* height: 600px; */
+
   margin: 5% 5% 0 5%;
-  color: whitesmoke;
+  color: black;
+  /* --------------------
+  height: 600px; */
+}
+.gridContainer > p{
+  text-transform: uppercase;
+  font-size: 2.5rem;
 }
 
+/*
 .hair{
   display: flex;
   flex-wrap: wrap;
@@ -271,27 +276,65 @@ h3 {
 .gallery{
   height:250px;
   padding: 2.5rem;
-}
-/* .bottem1{
-  transform:translate(0%,50%);
-  width: 400px;
-  box-shadow: 1px 1px whitesmoke;
-}
-.bottem2{
-  transform:translate(-10%,50%);
-  width: 400px;
-  box-shadow: 1px 1px whitesmoke;
-}
-.top1{
-  transform:translate(150%,-60%);
-  padding: 1rem;
-  box-shadow: 1px 1px whitesmoke;
-}
-.top2{
-  transform:translate(-240%,-60%);
-  padding: 1rem;
-  box-shadow: 1px 1px whitesmoke;
 } */
+
+.container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  /* gap: 1em 1em;  */
+  grid-template-areas: 
+    "item1 item1 . . . . item4 item4"
+    "item1 item1 item2 item2 item3 item3 item4 item4"; 
+    /* height: 40rem; */
+    background: black;
+    background-image: url('../img/pexels-churckyno-bryant-1546035.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center ;
+    background-position-y: -6rem ;
+}
+
+.item1 { grid-area: item1;
+  height: 40rem;
+  background-image: url('../img/pexels-pixabay-219550-removebg-preview.png');
+  background-size: 20rem 40rem;
+  background-repeat: no-repeat;
+  box-shadow: .1rem .1rem .6rem white;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.item2 { grid-area: item2; 
+  height: 20rem;
+  /* background: blue; */
+  background-image: url('../img/istockphoto-1312807901-1024x1024-transformed-removebg-preview.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position-x: -1.9rem;
+  background-position-y: center;
+  /* box-shadow: .1rem .1rem .6rem white; */
+}
+.item3 { grid-area: item3; 
+  height: 20rem;
+  background: url('../img/istockphoto-1055099140-1024x1024-transformed-removebg-preview.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:top;
+  /* box-shadow: 0 -0.1rem .6rem white; */
+
+}
+.item4 { grid-area: item4; 
+  height: 40rem;
+  background: url('../img/tammie-allen-KIg7V5AbTpw-unsplash-removebg-preview.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:top;
+  box-shadow: .1rem .1rem .6rem white;
+  background-position: center;
+
+}
+
 
 
 /*--------------------------------------end of above -------------------------*/
@@ -333,7 +376,8 @@ footer span{
 
 /*-----------Media Quries-----------*/
 
-@media screen and  (max-width: 480px) {
+@media screen and (max-width: 480px) {
+
   header{
     height: 4rem;
     display: flex;
@@ -365,9 +409,6 @@ footer span{
     height: 270px;
   }
 
-/* .heading{
-  flex-direction: column;
-} */
 
   .heading > h1 {
     font-size: 3.5rem;
@@ -446,10 +487,47 @@ footer span{
   /*-------------end of style-------*/
   /*-------------start of gallery-------*/
 
-  .lookBook{
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+      "item1"
+      "item2"
+      "item3"
+      "item4";
+    height: auto;
+    gap: 1rem;
+  }
+  .gridContainer > p{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+    .item1 { grid-area: item1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+
+  .item2 { grid-area: item2; 
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+  }
+  .item3 { grid-area: item3; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:top;
+    /* box-shadow: 0 -0.1rem .6rem white; */
+  }
+
+
+
+  /* .lookBook{
     text-align: center;
     margin: 0;
-    /* background-image: url(../img/pexels-churckyno-bryant-1546035.jpg); */
     color: whitesmoke;
     text-decoration: double whitesmoke 2px;
   }
@@ -462,9 +540,6 @@ footer span{
     justify-content:space-between;
   }
 
-  /* .gallery{
-    height:25rem;
-  } */
 
   .bottem1{
     width: 20rem;
@@ -486,7 +561,7 @@ footer span{
     width: 15rem;
     box-shadow: none;
     margin-bottom: 5rem;
-  }
+  } */
 
   /*---------------------end of gallery-----------------*/
   /*---------------------start of footer-----------------*/
@@ -497,15 +572,17 @@ footer span{
     font-size: 1.4rem;
     margin: 0 1rem 0 1rem;
     }
+
+    footer{
+      text-align: center;
+      margin-bottom: 0;
+    }
+  
   }
 
-  footer{
-    text-align: center;
-    margin-bottom: 0;
-  }
 
-
-@media screen and (min-width:481px) and (max-width:840px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    /* // applied  only between 767 px and 480px */
 
   header{
     height: 4rem;
@@ -554,10 +631,30 @@ footer span{
     margin-left: 5%;
   }
 
-  .lookBook{
+  
+  .item1 { grid-area: item1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+
+  .item2 { grid-area: item2; 
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* background-position-x: center; */
+    background-position-y: center;
+  }
+  .item3 { grid-area: item3; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    /* box-shadow: 0 -0.1rem .6rem white; */
+  }
+
+  /* .lookBook{
     text-align: center;
     margin: 0;
-    /* background-image: url(../img/pexels-churckyno-bryant-1546035.jpg); */
+    background-image: url(../img/pexels-churckyno-bryant-1546035.jpg);
     color: whitesmoke;
     text-decoration: double whitesmoke 2px;
   }
@@ -573,5 +670,6 @@ footer span{
 
   .gallery{
     height:25rem;
-  }  
+  }   */
+  
 }
